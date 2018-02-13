@@ -5,13 +5,15 @@
  */
 package tictactoe;
 
+import java.io.IOException;
+
 /**
  *
  * @author Tobias
  */
 public interface TicTacToePlayer
 {
-    public void startNewGame(int playerID);
-    public int takeTurn(TicTacToeBoard board, int[] validPositions);
-    public void endGame(int result);
+    public void startNewGame(int playerID) throws IOException;
+    public int takeTurn(TicTacToeBoard board, int[] validPositions) throws IOException;
+    public void endGame(int result) throws IOException;
 }

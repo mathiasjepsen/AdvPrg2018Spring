@@ -15,14 +15,14 @@ public class Test
 {
     public static void main(String[] args)
     {
-        TextualInterface ti = new ConsoleTextualInterface();
+        ITextualInterface ti = new ConsoleTextualInterface();
+//
+//        String name = ti.askForString("What is your name? : ");
+//        int age = ti.askForInteger("What is your age? : ", 0, 200);
+//        String[] food = {"Banana", "Ice cream", "Tomato", "Grapes", "Apple"};
+//        int favorite = ti.makeSingleChoice("What do like best? : ", food);
         
-        String name = ti.askForString("What is your name? : ");
-        int age = ti.askForInteger("What is your age? : ", 0, 200);
-        String[] food = {"Banana", "Ice cream", "Tomato", "Grapes", "Apple"};
-        int favorite = ti.makeSingleChoice("What do like best? : ", food);
-        
-        System.out.println("Hi " + name);
-        System.out.println("It seems that you are " + age + " years old and like " + food[favorite]);
+//        System.out.println("Hi " + name);
+//        System.out.println("It seems that you are " + age + " years old and like " + food[favorite]);
     }
 }

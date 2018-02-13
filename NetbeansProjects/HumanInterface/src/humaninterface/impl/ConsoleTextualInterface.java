@@ -5,75 +5,62 @@
  */
 package humaninterface.impl;
 
-import humaninterface.TextualInterface;
 import java.util.Scanner;
+import humaninterface.ITextualInterface;
+import java.io.IOException;
 
 /**
  *
  * @author Tobias
  */
-public class ConsoleTextualInterface implements TextualInterface
-{
+public class ConsoleTextualInterface implements ITextualInterface {
+
     private Scanner scanner;
 
-    public ConsoleTextualInterface()
-    {
+    public ConsoleTextualInterface() {
         scanner = new Scanner(System.in);
     }
-    
-    
+
     @Override
-    public void sendMessage(String msg)
-    {
+    public void sendMessage(String msg) {
         System.out.print(msg);
     }
 
     @Override
-    public String askForString(String question)
-    {
+    public String askForString(String question) {
         sendMessage(question);
         return scanner.nextLine();
     }
 
     @Override
-    public String askForPassword(String question)
-    {
+    public String askForPassword(String question) {
         return askForString(question);
     }
 
     @Override
-    public String askForEmail(String question)
-    {
+    public String askForEmail(String question) {
         //ToDo: Check for proper password.
         return askForString(question);
     }
 
     @Override
-    public int askForInteger(String question)
-    {
-        while(true)
-        {
+    public int askForInteger(String question) {
+        while (true) {
             String input = askForString(question);
-            try
-            {
+            try {
                 int res = Integer.parseInt(input);
                 return res;
-            }
-            catch(NumberFormatException e)
-            {
+            } catch (NumberFormatException e) {
                 sendMessage("Please enter an integer.\n");
             }
-        }        
+        }
     }
 
     @Override
-    public int askForInteger(String question, int min, int max)
-    {
-        while(true)
-        {
+    public int askForIntegerMinMax(String question, int min, int max) {
+        while (true) {
             int res = askForInteger(question);
-            if(res >= min && res <= max)
-            {
+            if (res >= min && res <= max) {
                 return res;
             }
             sendMessage("Please enter an integer between " + min + " and " + max + ".\n");
@@ -81,16 +68,19 @@ public class ConsoleTextualInterface implements TextualInterface
     }
 
     @Override
-    public int makeSingleChoice(String question, String[] choices)
-    {
+    public int makeSingleChoice(String question, String[] choices) {
         System.out.println(question + "\n\n");
-        for(int i = 0; i < choices.length; ++i)
-        {
-            System.out.println("  " + (i+1) + " - " + choices[i]);
+        for (int i = 0; i < choices.length; ++i) {
+            System.out.println("  " + (i + 1) + " - " + choices[i]);
         }
         System.out.println("\n\n");
-        int tmp = askForInteger("Please choose one: ", 1, choices.length);
-        return tmp-1;
+        int tmp = askForIntegerMinMax("Please choose one: ", 1, choices.length);
+        return tmp - 1;
     }
-    
+
+    @Override
+    public void close() throws IOException {
+        sendMessage("Shutting down");
+    }
+
 }

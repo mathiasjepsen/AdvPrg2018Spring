@@ -9,5 +9,11 @@
             <file>file:/C:/Users/Tobias/EFIF/OneDrive%20-%20EFIF/CBA/F2018/AdvPrg/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/TicTacToePlayer.java</file>
             <file>file:/C:/Users/Tobias/EFIF/OneDrive%20-%20EFIF/CBA/F2018/AdvPrg/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/impl/remote/TicTacToePlayerCallSide.java</file>
         </group>
+        <group name="Semester 2">
+            <file>file:/Users/mathiasjepsen/Dropbox/Datamatiker/Semester%204/Advanced%20Programming/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/impl/remote/TicTacToeServer.java</file>
+            <file>file:/Users/mathiasjepsen/Dropbox/Datamatiker/Semester%204/Advanced%20Programming/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/remote/TicTacToeConnectionImpl.java</file>
+            <file>file:/Users/mathiasjepsen/Dropbox/Datamatiker/Semester%204/Advanced%20Programming/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/impl/remote/TicTacToePlayerCallSide.java</file>
+            <file>file:/Users/mathiasjepsen/Dropbox/Datamatiker/Semester%204/Advanced%20Programming/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/remote/TicTacToeConnection.java</file>
+        </group>
     </open-files>
 </project-private>
