@@ -2,6 +2,7 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/C:/Users/Tobias/EFIF/OneDrive%20-%20EFIF/CBA/F2018/AdvPrg/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/remote/TicTacToeConnection.java</file>
             <file>file:/C:/Users/Tobias/EFIF/OneDrive%20-%20EFIF/CBA/F2018/AdvPrg/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/impl/remote/RemoteClientTest.java</file>
@@ -15,5 +16,8 @@
             <file>file:/Users/mathiasjepsen/Dropbox/Datamatiker/Semester%204/Advanced%20Programming/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/impl/remote/TicTacToePlayerCallSide.java</file>
             <file>file:/Users/mathiasjepsen/Dropbox/Datamatiker/Semester%204/Advanced%20Programming/AdvPrg2018Spring/NetbeansProjects/TicTacToe/src/tictactoe/remote/TicTacToeConnection.java</file>
         </group>
+=======
+        <group/>
+>>>>>>> upstream/master
     </open-files>
 </project-private>
