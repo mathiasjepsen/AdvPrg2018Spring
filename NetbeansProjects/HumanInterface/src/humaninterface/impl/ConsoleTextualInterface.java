@@ -5,6 +5,11 @@
  */
 package humaninterface.impl;
 
+<<<<<<< HEAD
+=======
+import humaninterface.TextualInterface;
+import java.io.IOException;
+>>>>>>> upstream/master
 import java.util.Scanner;
 import humaninterface.ITextualInterface;
 import java.io.IOException;
@@ -79,8 +84,16 @@ public class ConsoleTextualInterface implements ITextualInterface {
     }
 
     @Override
+<<<<<<< HEAD
     public void close() throws IOException {
         sendMessage("Shutting down");
     }
 
+=======
+    public void close() throws IOException
+    {
+        System.out.println("Goodbye!");
+    }
+    
+>>>>>>> upstream/master
 }

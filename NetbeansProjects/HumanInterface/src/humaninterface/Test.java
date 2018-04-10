@@ -6,6 +6,8 @@
 package humaninterface;
 
 import humaninterface.impl.ConsoleTextualInterface;
+import humaninterface.remote.Conversation;
+import java.io.IOException;
 
 /**
  *
@@ -13,8 +15,9 @@ import humaninterface.impl.ConsoleTextualInterface;
  */
 public class Test
 {
-    public static void main(String[] args)
+    public static void main(String[] args) throws IOException
     {
+<<<<<<< HEAD
         ITextualInterface ti = new ConsoleTextualInterface();
 //
 //        String name = ti.askForString("What is your name? : ");
@@ -24,5 +27,10 @@ public class Test
         
 //        System.out.println("Hi " + name);
 //        System.out.println("It seems that you are " + age + " years old and like " + food[favorite]);
+=======
+        TextualInterface ti = new ConsoleTextualInterface();  
+        Conversation conversation = new Conversation(ti);
+        conversation.run();
+>>>>>>> upstream/master
     }
 }
